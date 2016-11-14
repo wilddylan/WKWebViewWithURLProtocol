@@ -33,6 +33,12 @@ pod "WKWebViewWithURLProtocol"
 
 Dylan, dylan@china.com
 
+###### Thanks
+
+[@yeatse](https://blog.yeatse.com)
+
 ###### License
 
 MIT.
+
+
