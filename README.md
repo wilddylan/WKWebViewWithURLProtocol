@@ -5,8 +5,6 @@
 After `iOS8.0`, `WKWebView` want to instead of `UIWebView`, but with some defects such as: URLProtocol can't process the request from WKWebView.
 `WKWebViewWithURLProtocol` want fix this use runtime. Now, coming!
 
-step.1:
-
 ```objc
 [NSURLProtocol wk_registerScheme:@"http"];
 [NSURLProtocol wk_registerScheme:@"https"];
