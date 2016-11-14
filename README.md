@@ -2,7 +2,7 @@
 
 ###### introductions
 
-After `iOS8.0`, `WKWebView` want to instead of `UIWebView`, but with some defects. Such as: URLProtocol can't process the request from WKWebView.
+After `iOS8.0`, `WKWebView` want to instead of `UIWebView`, but with some defects such as: URLProtocol can't process the request from WKWebView.
 `WKWebViewWithURLProtocol` want fix this use runtime. Now, coming!
 
 step.1:
@@ -35,7 +35,7 @@ Dylan, dylan@china.com
 
 ###### Thanks
 
-[@yeatse](https://blog.yeatse.com)
+@yeatse <Original repo without cocoapods>
 
 ###### License
 
