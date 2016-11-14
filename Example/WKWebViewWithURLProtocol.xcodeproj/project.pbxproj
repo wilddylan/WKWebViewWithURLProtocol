@@ -20,9 +20,10 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		833AB1E7B33D5189CB1B83BD /* Pods_WKWebViewWithURLProtocol_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F687AEE35212EA49F811E0 /* Pods_WKWebViewWithURLProtocol_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A0DB139D95EA581282778AD7 /* Pods_WKWebViewWithURLProtocol_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F86F06A88034E80AFACF2B /* Pods_WKWebViewWithURLProtocol_Tests.framework */; };
+		DC23583431C858F9FABC382D /* libPods-WKWebViewWithURLProtocol_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7DFF14D563AAE93DC974024 /* libPods-WKWebViewWithURLProtocol_Tests.a */; };
+		EE4B485684610C7EFC61895C /* libPods-WKWebViewWithURLProtocol_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEACFEC195135F73B40905EA /* libPods-WKWebViewWithURLProtocol_Example.a */; };
+		FCA137DF1DD97B32006E7062 /* URLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA137DE1DD97B32006E7062 /* URLProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05F86F06A88034E80AFACF2B /* Pods_WKWebViewWithURLProtocol_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WKWebViewWithURLProtocol_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* WKWebViewWithURLProtocol_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewWithURLProtocol_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,15 +56,18 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		7AC75DA3EB80EE02F33102E1 /* WKWebViewWithURLProtocol.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WKWebViewWithURLProtocol.podspec; path = ../WKWebViewWithURLProtocol.podspec; sourceTree = "<group>"; };
+		7AC75DA3EB80EE02F33102E1 /* WKWebViewWithURLProtocol.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WKWebViewWithURLProtocol.podspec; path = ../WKWebViewWithURLProtocol.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		97C1D0D469716FA977EE1319 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		97C1D0D469716FA977EE1319 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A45F534A09248C3C520718B6 /* Pods-WKWebViewWithURLProtocol_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewWithURLProtocol_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewWithURLProtocol_Example/Pods-WKWebViewWithURLProtocol_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BA87FDC35E00D19E46584CEB /* Pods-WKWebViewWithURLProtocol_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewWithURLProtocol_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewWithURLProtocol_Tests/Pods-WKWebViewWithURLProtocol_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BAC9221C0ABDCBF3F8CC0173 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BAC9221C0ABDCBF3F8CC0173 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BEACFEC195135F73B40905EA /* libPods-WKWebViewWithURLProtocol_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WKWebViewWithURLProtocol_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59D457EEEB5371485B55538 /* Pods-WKWebViewWithURLProtocol_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewWithURLProtocol_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewWithURLProtocol_Example/Pods-WKWebViewWithURLProtocol_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F9F687AEE35212EA49F811E0 /* Pods_WKWebViewWithURLProtocol_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WKWebViewWithURLProtocol_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DFF14D563AAE93DC974024 /* libPods-WKWebViewWithURLProtocol_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WKWebViewWithURLProtocol_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC819C2862B576D48948F95E /* Pods-WKWebViewWithURLProtocol_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewWithURLProtocol_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewWithURLProtocol_Tests/Pods-WKWebViewWithURLProtocol_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FCA137DD1DD97B32006E7062 /* URLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLProtocol.h; sourceTree = "<group>"; };
+		FCA137DE1DD97B32006E7062 /* URLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +78,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				833AB1E7B33D5189CB1B83BD /* Pods_WKWebViewWithURLProtocol_Example.framework in Frameworks */,
+				EE4B485684610C7EFC61895C /* libPods-WKWebViewWithURLProtocol_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +89,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				A0DB139D95EA581282778AD7 /* Pods_WKWebViewWithURLProtocol_Tests.framework in Frameworks */,
+				DC23583431C858F9FABC382D /* libPods-WKWebViewWithURLProtocol_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +124,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				F9F687AEE35212EA49F811E0 /* Pods_WKWebViewWithURLProtocol_Example.framework */,
-				05F86F06A88034E80AFACF2B /* Pods_WKWebViewWithURLProtocol_Tests.framework */,
+				BEACFEC195135F73B40905EA /* libPods-WKWebViewWithURLProtocol_Example.a */,
+				F7DFF14D563AAE93DC974024 /* libPods-WKWebViewWithURLProtocol_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,6 +138,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* WKViewController.h */,
 				6003F5A6195388D20070C39A /* WKViewController.m */,
+				FCA137DD1DD97B32006E7062 /* URLProtocol.h */,
+				FCA137DE1DD97B32006E7062 /* URLProtocol.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -365,7 +370,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D06DF1B28C86E19AF989D880 /* [CP] Check Pods Manifest.lock */ = {
@@ -380,7 +385,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -391,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* WKAppDelegate.m in Sources */,
+				FCA137DF1DD97B32006E7062 /* URLProtocol.m in Sources */,
 				6003F5A7195388D20070C39A /* WKViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

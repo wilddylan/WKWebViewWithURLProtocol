@@ -1,0 +1,16 @@
+PODS:
+  - WKWebViewWithURLProtocol (0.1.0)
+
+DEPENDENCIES:
+  - WKWebViewWithURLProtocol (from `../`)
+
+EXTERNAL SOURCES:
+  WKWebViewWithURLProtocol:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WKWebViewWithURLProtocol: 5be152a43ca4e5060a9977c20e2ae39af2644542
+
+PODFILE CHECKSUM: 252ac79685aa459f5b6e072c3803977a89439770
+
+COCOAPODS: 1.2.0.beta.1

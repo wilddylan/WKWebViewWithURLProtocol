@@ -1,29 +1,38 @@
 # WKWebViewWithURLProtocol
 
-[![CI Status](http://img.shields.io/travis/Dylan/WKWebViewWithURLProtocol.svg?style=flat)](https://travis-ci.org/Dylan/WKWebViewWithURLProtocol)
-[![Version](https://img.shields.io/cocoapods/v/WKWebViewWithURLProtocol.svg?style=flat)](http://cocoapods.org/pods/WKWebViewWithURLProtocol)
-[![License](https://img.shields.io/cocoapods/l/WKWebViewWithURLProtocol.svg?style=flat)](http://cocoapods.org/pods/WKWebViewWithURLProtocol)
-[![Platform](https://img.shields.io/cocoapods/p/WKWebViewWithURLProtocol.svg?style=flat)](http://cocoapods.org/pods/WKWebViewWithURLProtocol)
+###### introductions
 
-## Example
+After `iOS8.0`, `WKWebView` want to instead of `UIWebView`, but with some defects. Such as: URLProtocol can't process the request from WKWebView.
+`WKWebViewWithURLProtocol` want fix this use runtime. Now, coming!
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+step.1:
 
-## Requirements
+```objc
+[NSURLProtocol wk_registerScheme:@"http"];
+[NSURLProtocol wk_registerScheme:@"https"];
 
-## Installation
+[NSURLProtocol registerClass:[URLProtocol class]];
+```
 
-WKWebViewWithURLProtocol is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+`URLProtocol` is the subclass of `NSURLProtocol`, before this, use `wk_registerScheme` to let `URLProtocol` know what scheme can be hooked from WKWebView. Now this demo want to hook `http` and `https` scheme.
+
+```objc
+[_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.devdylan.cn"]]];
+```
+
+Now, go to your custom URLProtocol, set some breakpoint or logs, oh my god! it's worked!
+
+
+###### Installation
 
 ```ruby
 pod "WKWebViewWithURLProtocol"
 ```
 
-## Author
+###### Author
 
-Dylan, 3664132@163.com
+Dylan, dylan@china.com
 
-## License
+###### License
 
-WKWebViewWithURLProtocol is available under the MIT license. See the LICENSE file for more info.
+MIT.
