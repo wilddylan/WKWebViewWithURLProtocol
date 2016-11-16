@@ -11,31 +11,37 @@
 @implementation URLProtocol
 
   + (BOOL)canInitWithRequest:(NSURLRequest *)request {
-    NSLog(@"-> %s: %@", __func__, request.URL);
+
     return YES;
   }
 
   + (NSURLRequest *)canonicalRequestForRequest:(NSURLRequest *)request {
-    NSLog(@"-> %s: %@", __func__, request.URL);
+
     return request;
   }
 
   - (instancetype)initWithRequest:(NSURLRequest *)request cachedResponse:(NSCachedURLResponse *)cachedResponse client:(id<NSURLProtocolClient>)client {
     self = [super initWithRequest:request cachedResponse:cachedResponse client:client];
     if ( self ) {
-      NSLog(@"-> %s: %@", __func__, request.URL);
+
     }
     return self;
   }
 
   - (void)startLoading {
 
-    NSLog(@"-> %s: %@", __func__, self.request.URL);
+    // simu get data
+    NSString *htmlString = @"Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!Hello world!!";
+
+    NSURLResponse *response = [[NSURLResponse alloc] initWithURL:[NSURL URLWithString:@"https://github.com"] MIMEType:@"text/html" expectedContentLength:[htmlString dataUsingEncoding:NSUTF8StringEncoding].length textEncodingName:@"utf-8"];
+
+    [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
+    [self.client URLProtocol:self didLoadData:[htmlString dataUsingEncoding:NSUTF8StringEncoding]];
+    [self.client URLProtocolDidFinishLoading:self];
   }
 
   - (void)stopLoading {
 
-    NSLog(@"-> %s: %@", __func__, self.request.URL);
   }
 
 @end

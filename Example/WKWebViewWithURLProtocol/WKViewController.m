@@ -31,7 +31,7 @@
   _webView = [[WKWebView alloc] initWithFrame:self.view.frame];
   [self.view addSubview:_webView];
 
-  [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.devdylan.cn"]]];
+  [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://github.com/"]]];
 }
 
 - (void)didReceiveMemoryWarning {
