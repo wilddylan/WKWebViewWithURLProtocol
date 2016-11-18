@@ -18,7 +18,13 @@ After `iOS8.0`, `WKWebView` want to instead of `UIWebView`, but with some defect
 [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.devdylan.cn"]]];
 ```
 
-Now, go to your custom URLProtocol, set some breakpoint or logs, oh my god! it's worked!
+Now, open your custom URLProtocol, set some breakpoint or logs, oh my god! it's worked!
+
+Some questions: 
+
+Q: Used private API when in review:
+
+A: [Watch this issue](https://github.com/brave/browser-ios/issues/96#issuecomment-260365341)
 
 
 ###### Installation
@@ -37,6 +43,4 @@ Dylan, dylan@china.com
 
 ###### License
 
-MIT.
-
-
+MIT License.
