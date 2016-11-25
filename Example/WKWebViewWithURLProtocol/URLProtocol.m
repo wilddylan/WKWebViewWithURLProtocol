@@ -12,10 +12,16 @@
 
   + (BOOL)canInitWithRequest:(NSURLRequest *)request {
 
+    NSLog(@"%s %@", __func__, [[NSString alloc] initWithData:request.HTTPBody encoding:NSUTF8StringEncoding]);
+    NSLog(@"%s %@", __func__, [request valueForHTTPHeaderField:@"field"]);
+
     return YES;
   }
 
   + (NSURLRequest *)canonicalRequestForRequest:(NSURLRequest *)request {
+
+    NSLog(@"%s %@", __func__, [[NSString alloc] initWithData:request.HTTPBody encoding:NSUTF8StringEncoding]);
+    NSLog(@"%s %@", __func__, [request valueForHTTPHeaderField:@"field"]);
 
     return request;
   }

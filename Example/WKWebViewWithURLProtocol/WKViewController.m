@@ -31,7 +31,11 @@
   _webView = [[WKWebView alloc] initWithFrame:self.view.frame];
   [self.view addSubview:_webView];
 
-  [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://github.com/"]]];
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://github.com/"]];
+  request.HTTPBody = [@"Hello world" dataUsingEncoding:NSUTF8StringEncoding];
+  [request setValue:@"custom header" forHTTPHeaderField:@"field"];
+
+  [_webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning {
