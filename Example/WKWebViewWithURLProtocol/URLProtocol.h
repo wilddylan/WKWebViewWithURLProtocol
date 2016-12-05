@@ -10,4 +10,6 @@
 
 @interface URLProtocol : NSURLProtocol
 
+- (instancetype)initWithRequest:(NSURLRequest *)request cachedResponse:(NSCachedURLResponse *)cachedResponse client:(id<NSURLProtocolClient>)client;
+
 @end
