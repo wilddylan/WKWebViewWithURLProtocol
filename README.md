@@ -2,6 +2,8 @@
 
 ###### introductions
 
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+
 After `iOS8.0`, `WKWebView` want to instead of `UIWebView`, but with some defects such as: URLProtocol can't process the request from WKWebView.
 `WKWebViewWithURLProtocol` want to fix this use runtime. Now-coming!
 
