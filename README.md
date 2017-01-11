@@ -24,6 +24,8 @@ But Notice, WKWebView ignored HTTP Body in request, it's a bug, resolve with `Ja
 
 Now, open your custom URLProtocol, set some breakpoint or logs, oh my god! it's worked!
 
+> Notes: It's only useful when systemVersion > `iOS8.4`
+
 Some questions: 
 
 Q: Used private API when in review:
