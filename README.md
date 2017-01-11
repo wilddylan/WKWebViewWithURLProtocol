@@ -44,7 +44,7 @@ Dylan, dylan@china.com
 
 ###### Thanks
 
-@yeatse <Original repo without cocoapods>
+@yeatse, Original repo without cocoapods
 
 ###### License
 
