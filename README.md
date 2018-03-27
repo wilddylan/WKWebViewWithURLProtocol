@@ -1,5 +1,10 @@
 # WKWebViewWithURLProtocol
 
+:Warning:
+
+> Note：If you target iOS 11, you can now use WKURLSchemeHandler to avoid this trick! 😆
+
+
 ###### introductions
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
