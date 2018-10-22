@@ -54,3 +54,5 @@ Dylan, dylan@china.com
 ###### License
 
 MIT License.
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FWildDylan%2FWKWebViewWithURLProtocol.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FWildDylan%2FWKWebViewWithURLProtocol?ref=badge_large)
